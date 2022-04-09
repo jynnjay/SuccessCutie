@@ -29,7 +29,9 @@ flask run
 
 ---
 Kapag gustong makita sa Internet gumamit ng ngrok! 
-https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip
+https://ngrok.com/
+
+i download ang nrok pagtapos gumawa ng sariling account
 
 ngrok authtoken {} // ilagay sa curly braces ang sarili mong ngrok authoken
 
