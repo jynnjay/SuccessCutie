@@ -26,6 +26,7 @@ export FLASK_ENV=development
 
 flask run
 
+copy the http://127.0.0.1:5000/ and paste sa browser
 
 ---
 Kapag gustong makita sa Internet gumamit ng ngrok! 
