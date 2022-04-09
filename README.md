@@ -1,6 +1,6 @@
 # SuccessCutie
 
-git clone
+git clone https://github.com/jynnjay/SuccessCutie.git
 
 cd IAS
 
