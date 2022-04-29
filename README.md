@@ -10,7 +10,7 @@ py -m venv venv
 
 pip install -r requirements.txt
 
-export FLASK_ENV=development
+export FLASK_ENV=development  // set FLASK_ENV=development (for Windows Powershell)
 
 flask run
 
@@ -22,7 +22,7 @@ cd IAS
 
 . venv/Scripts/activate
 
-export FLASK_ENV=development
+export FLASK_ENV=development  // set FLASK_ENV=development (for Windows Powershell)
 
 flask run
 
