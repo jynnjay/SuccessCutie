@@ -31,7 +31,7 @@ flask run
 copy the http://127.0.0.1:5000/login and paste sa browser
 
 ---
-Kapag gustong makita sa Internet gumamit ng ngrok! (or kung alin mang tunnel host na katulad ng ngrok. 
+Kapag gustong makita sa Internet gumamit ng ngrok! (or kung alin mang tunnel host na katulad ng ngrok. https://www.google.com/amp/s/www.softwaretestinghelp.com/ngrok-alternatives/amp/
 https://ngrok.com/
 
 //i download ang nrok pagtapos gumawa ng sariling account
