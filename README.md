@@ -28,7 +28,7 @@ export FLASK_ENV=development  // set FLASK_ENV=development (for Windows Powershe
 
 flask run
 
-copy the http://127.0.0.1:5000/ and paste sa browser
+copy the http://127.0.0.1:5000/login and paste sa browser
 
 ---
 Kapag gustong makita sa Internet gumamit ng ngrok! (or kung alin mang tunnel host na katulad ng ngrok. 
@@ -42,4 +42,4 @@ ngrok http 5000
 
 [Capture](https://user-images.githubusercontent.com/85058488/162574693-2355ee3a-6b8a-4c55-88d4-e32303ff454c.PNG)
 
-i copy and paste ang naka highlight na https:// sa iyong browser
+i copy and paste ang naka highlight na https:// sa iyong browser and dagdagan ng /login
