@@ -3,35 +3,35 @@ from flask_login import login_required, current_user
 from .models import Note
 from . import db
 import json
+from flask import Flask,render_template,Response
+import cv2
 
 views = Blueprint('views', __name__)
+camera=cv2.VideoCapture(0)
 
-
-@views.route('/', methods=['GET', 'POST'])
+#@views.route('/', methods=['GET', 'POST'])
 @login_required
-def home():
-    if request.method == 'POST':
-        note = request.form.get('note')
 
-        if len(note) < 1:
-            flash('Note is too short!', category='error')
+
+def generate_frames():
+    while True:
+            
+        ## read the camera frame
+        success,frame=camera.read()
+        if not success:
+            break
         else:
-            new_note = Note(data=note, user_id=current_user.id)
-            db.session.add(new_note)
-            db.session.commit()
-            flash('Note added!', category='success')
+            ret,buffer=cv2.imencode('.jpg',frame)
+            frame=buffer.tobytes()
 
+        yield(b'--frame\r\n'
+                   b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+@views.route('/')
+def home():
+    
     return render_template("home.html", user=current_user)
 
-
-@views.route('/delete-note', methods=['POST'])
-def delete_note():
-    note = json.loads(request.data)
-    noteId = note['noteId']
-    note = Note.query.get(noteId)
-    if note:
-        if note.user_id == current_user.id:
-            db.session.delete(note)
-            db.session.commit()
-
-    return jsonify({})
+@views.route('/video')
+def video():
+    return Response(generate_frames(),mimetype='multipart/x-mixed-replace; boundary=frame')
+    
