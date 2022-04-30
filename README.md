@@ -1,8 +1,10 @@
 # SuccessCutie
 
+gumamit ng Git Bash para ma set up ang mga Command Lines na ito isa isa.
+
 git clone https://github.com/jynnjay/SuccessCutie.git
 
-cd IAS
+cd SuccessCutie
 
 py -m venv venv
 
@@ -18,7 +20,7 @@ flask run
 ---
 Kapag bubuksan ulet ang server hindi na kailangan gawin lahat ang nasa taas
 
-cd IAS
+cd SuccessCutie
 
 . venv/Scripts/activate
 
@@ -29,7 +31,7 @@ flask run
 copy the http://127.0.0.1:5000/ and paste sa browser
 
 ---
-Kapag gustong makita sa Internet gumamit ng ngrok! 
+Kapag gustong makita sa Internet gumamit ng ngrok! (or kung alin mang tunnel host na katulad ng ngrok. 
 https://ngrok.com/
 
 i download ang nrok pagtapos gumawa ng sariling account
