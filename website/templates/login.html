@@ -1,10 +1,12 @@
 {% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
 %}
-<body style="text-align: center" bgcolor="gray">
+<body style="text-align: center; background-image: url(https://i.ibb.co/RNP220M/aestraffic01.gif); background-repeat:no-repeat; background-size: cover; " bgcolor="gray">
+  <!--https://i.ibb.co/RNP220M/aestraffic01.gif-->
+  
 <form method="POST">
-  <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
-  <h1>ST-WIDS</h1>
-  <h6>Smart Traffic Web-Based <br>Intrusion Detection System</h6>
+  
+  <h1 style="color: white;">ST-WIDS</h1>
+  <h6 style="color: white;">Smart Traffic Web-Based <br>Intrusion Detection System</h6>
   <div class="form-group">
     <!-- <label for="email">Email Address</label> -->
     <input
@@ -12,8 +14,9 @@
       class="form-control"
       id="email"
       name="email"
+      required=""
       placeholder="Enter email"
-      style="text-align: center"
+      style="text-align: center; "
     />
   </div>
   <div class="form-group">
@@ -23,12 +26,14 @@
       class="form-control"
       id="password"
       name="password"
+      required=""
       placeholder="Enter password"
       style="text-align: center"
     />
   </div>
-  <br />
   <button type="submit" class="btn btn-primary">Login</button>
+  <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
+  
 </form>
 </body>
 {% endblock %}

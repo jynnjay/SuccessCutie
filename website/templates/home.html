@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
-<body style="text-align: center">
+<body style="text-align: center"; bgcolor="gray">
 <!-- <h1 align="center">Notes</h1> -->
 <!-- <ul class="list-group list-group-flush" id="notes">
   {% for note in user.notes %}
@@ -19,8 +19,15 @@
     <button type="submit" class="btn btn-primary">Add Note</button>
   </div>
 </form> -->
-<h1>Oh no! Website Underconstruction</h1>
+<p class="nav-item nav-link"> Welcome, {{user.first_name}} {{user.last_name}}</p>
 
+<h1>Oh no! Website Underconstruction</h1>
+    <div>
+
+        <img src="{{ url_for('views.video') }}" width="30%"/> <img src="{{ url_for('views.video') }}" width="30%"/> <img src="{{ url_for('views.video') }}" width="30%"/>
+    </div>
+            
+  
 </body>
 
 {% endblock %}
