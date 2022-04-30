@@ -1,6 +1,6 @@
 # SuccessCutie
 
-gumamit ng Git Bash para ma set up ang mga Command Lines na ito isa isa.
+//gumamit ng Git Bash (https://git-scm.com/downloads) para ma set up ang mga Command Lines na ito isa isa.
 
 git clone https://github.com/jynnjay/SuccessCutie.git
 
@@ -18,7 +18,7 @@ flask run
 
 
 ---
-Kapag bubuksan ulet ang server hindi na kailangan gawin lahat ang nasa taas
+//Kapag bubuksan ulet ang server hindi na kailangan gawin lahat ang nasa taas
 
 cd SuccessCutie
 
@@ -31,8 +31,8 @@ flask run
 copy the http://127.0.0.1:5000/login and paste sa browser
 
 ---
-Kapag gustong makita sa Internet gumamit ng ngrok! (or kung alin mang tunnel host na katulad ng ngrok. https://www.google.com/amp/s/www.softwaretestinghelp.com/ngrok-alternatives/amp/
-https://ngrok.com/
+//Kapag gustong makita sa Internet gumamit ng ngrok! (or kung alin mang tunnel host na katulad ng ngrok. https://www.google.com/amp/s/www.softwaretestinghelp.com/ngrok-alternatives/amp/)
+//https://ngrok.com/
 
 //i download ang nrok pagtapos gumawa ng sariling account
 
