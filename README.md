@@ -48,7 +48,7 @@ ngrok http 5000
 [Capture](https://user-images.githubusercontent.com/85058488/162574693-2355ee3a-6b8a-4c55-88d4-e32303ff454c.PNG)
 
 //i copy and paste ang naka highlight na https:// sa iyong browser and dagdagan ng /login
-
+//Be aware na matakaw sa Internet kapag gumamit ng mga free tunnel hosting. If naka unlimited wi-fi, good 4 u.
 
 
 
