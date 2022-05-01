@@ -57,7 +57,7 @@ ngrok http 5000
 
 
  
-TO DO: **FOR THE MONTH OF MAY**
+TO DO (Jay-Ann, Joshua, Mark Louise): **FOR THE MONTH OF MAY**
 
 * Limit log in attempts to 3 only. This would prevent **brute force attack**.
  _Options:_ > If the attemptor reach the limit, his/her IP address will be block for 24 hours.
