@@ -63,7 +63,7 @@ TO DO (Jay-Ann, Joshua, Mark Louise): **FOR THE MONTH OF MAY**
  _Options:_ > If the attemptor reach the limit, his/her IP address will be block for 24 hours.
             > If the attemptor reach the limit, his/her account will be lock (just like in banking account app, if you ever experience that). He/She can only reactivate it through his/her email account through reset password link.
 * _(Optional)_ Do OTP Verification through **SMS** (highly recommended) or Email when logging in. This is only optional because OTP through SMS might not be free, limited trial only.
-* Do multiple VideoCapture streaming through different cameras. We only just did 1 VideoCapture yet.
+* Work with multiple VideoCapture streaming through different cameras. We only just did 1 VideoCapture yet.
 * When working with Raspbery Pi, we can use the picamera module. However, we don't have the resources so just focus on how we will execute the video stream.
 * Sanitize the coding especially the forms to avoid the **SQL Injection attack**.
 * Prevent the **DDoS attack**. (We must research how to do this so we can know how to do it.)
@@ -74,6 +74,6 @@ TO DO (Jay-Ann, Joshua, Mark Louise): **FOR THE MONTH OF MAY**
 
 
 IMPORTANT
-* We need to know how we will implement the admin side and client side. We must learn thoroughly how the codes work. How we will organize the code. 
+* We need to know how we will implement the admin side and client side. We must learn thoroughly how the codes work and how we will organize the code. 
 
 
