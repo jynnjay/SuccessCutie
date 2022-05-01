@@ -74,6 +74,6 @@ TO DO (Jay-Ann, Joshua, Mark Louise): **FOR THE MONTH OF MAY**
 
 
 IMPORTANT
-* We need to know how we will implement the admin side and client side. We must learn thoroughly how the codes work and how we will organize the code. 
+* We need to know how we will implement the admin side and client side coding. We must learn thoroughly how the codes work and how we will organize the code. 
 
 
