@@ -41,7 +41,7 @@ copy the http://127.0.0.1:5000/login and paste sa browser
 
 //sa CMD or terminal ng ngrok ilagay ito isa isa:
 
-ngrok authtoken {} // palitan ang curly braces ng sarili mong ngrok authoken
+ngrok authtoken {} // palitan ang curly braces ng sarili mong ngrok authoken na makikita sa sariling account sa ngrok
 
 ngrok http 5000
 
