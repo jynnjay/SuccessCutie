@@ -1,5 +1,3 @@
-# ni-import lang dito yung mga modules na nasa venv folder
-
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from .models import User
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -27,6 +25,7 @@ def login():
         else:
             flash('Invalid email or password.', category='error')
 
+
     return render_template("login.html", user=current_user)
 
 
@@ -49,7 +48,7 @@ def sign_up():
         user = User.query.filter_by(email=email).first()
         if user:
             flash('Email already exists.', category='error')
-        elif len(email) < 4:
+        elif len(email) < 7:
             flash('Email must be greater than 3 characters.', category='error')
         elif len(first_name) < 2:
             flash('First name must be greater than 1 character.', category='error')
