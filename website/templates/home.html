@@ -1,14 +1,29 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
+<html>
+<head>
+<script type="text/javascript">
+function goFullscreen(id) {
+  var element = document.getElementById(id);       
+  if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }  
+}
+</script>
+</head>
 <body style="text-align: center"; bgcolor="gray">
 
 <h1>Oh no! Website Underconstruction</h1>
     <div>
-
-        <img src="{{ url_for('views.video') }}" width="30%"/> <img src="{{ url_for('views.video') }}" width="30%"/> <img src="{{ url_for('views.video') }}" width="30%"/>
+        <img src="{{ url_for('views.video') }}" width="30%" id="video" controls="controls" onclick="goFullscreen('video'); return false"></img> <img src="{{ url_for('views.video') }}" width="30%" id="video" controls="controls" onclick="goFullscreen('video'); return false"></img> <img src="{{ url_for('views.video') }}" width="30%" id="video" controls="controls" onclick="goFullscreen('video'); return false"></img>
     </div>
+
             
-  
+<!--<script src="{{ url_for('static', filename='app.js') }}"></script> --> 
 </body>
+
+</html>
 
 {% endblock %}
