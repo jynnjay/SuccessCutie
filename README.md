@@ -69,7 +69,7 @@ TO DO (Jay-Ann, Joshua, Mark Louise): **FOR THE MONTH OF MAY**
 * When working with Raspbery Pi, we can use the picamera module. However, we don't have the resources so just focus on how we will execute the video stream when multiple camera is open and connected.
 * Sanitize the coding especially the forms to avoid the **SQL Injection attack**.
 * Prevent the **DDoS attack**. (We must research how to do this so we can know how to do it.)
-* _DONE_ Do zooming in or make the video stream clickable to full screen. This will be coded through JS.
+* _(DONE)_ Do zooming in or make the video stream clickable to full screen. This will be coded through JS.
 * Check if the URL could be vulnerable to path traversal.
   Path traversal is when the https://example.com/login?a3dj9d7?admin=user17pnml53?pw=ad7sjp9202h1ak57j2 can be access without the authentication (login) or access the 
   specific sensitive directory directly through the URL.
