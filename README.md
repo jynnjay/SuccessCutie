@@ -62,7 +62,7 @@ Development mode
 TO DO (Jay-Ann, Joshua, Mark Louise): **FOR THE MONTH OF MAY** 
 
 * Limit log in attempts to 3 only. This would prevent **brute force attack**.
- _Options:_ > If the attemptor reach the limit, his/her IP address will be block for 24 hours.
+ _Options:_ > If the attemptor reach the limit, his/her IP address will be block for only 10 minutes.
             > If the attemptor reach the limit, his/her account will be lock (just like in banking account app, if you ever experience that). He/She can only reactivate it through his/her email account through reset password link.
 * _(Optional)_ Do OTP Verification through **SMS** (highly recommended) or Email when logging in. This is only optional because OTP through SMS might not be free, limited trial only.
 * Work with multiple VideoCapture streaming through different cameras. We only just did 1 VideoCapture yet.
