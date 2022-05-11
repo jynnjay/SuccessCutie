@@ -34,4 +34,23 @@ def home():
 @views.route('/video')
 def video():
     return Response(generate_frames(),mimetype='multipart/x-mixed-replace; boundary=frame')
-    
+
+@views.route('/account')
+@login_required
+def account():
+    return render_template("account.html", user=current_user)
+
+@views.route('/iot')
+@login_required
+def iot():
+    return render_template("iot.html", user=current_user)
+
+@views.route('/log')
+@login_required
+def log():
+    return render_template("log.html", user=current_user)
+
+@views.route('/map')
+@login_required
+def map():
+    return render_template("map.html", user=current_user)    
