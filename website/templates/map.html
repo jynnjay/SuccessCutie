@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+%}
+<html>
+  <head>
+    <title>Map</title>
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body>
+    <h7>Google Maps</h7>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script> // Initialize and add the map
+    function initMap() {
+    // The location of 
+      var location = { lat: 14.464735726268835, lng: 121.0196794958922 };
+      // The map, centered at 14.464735726268835, 121.0196794958922
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 16,
+        center: location,
+      });
+      // The marker, positioned at your location
+      var marker = new google.maps.Marker({
+        position: location,
+      map: map,
+      });
+    }
+
+    window.initMap = initMap;
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD08aIt8FxrmAWjAAhpjYRFe9pt-Xbigo&callback=initMap"      
+    ></script>
+  </body>
+</html>
+
+{% endblock %}

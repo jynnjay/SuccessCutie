@@ -30,7 +30,11 @@
       <div class="collapse navbar-collapse" id="navbar">
         <div class="navbar-nav">
           {% if user.is_authenticated %}
-          <!-- <a class="nav-item nav-link" id="home" href="/">Home</a> -->
+            <a class="nav-item nav-link" id="home" href="/">Home</a>
+            <a class="nav-item nav-link" id="home" href="/account">Manage Accounts</a>
+            <a class="nav-item nav-link" id="home" href="/iot">Manage IoTs</a>
+            <a class="nav-item nav-link" id="home" href="/log">Access of Logs</a>
+            <a class="nav-item nav-link" id="home" href="/map">Map</a>
           <h7 align="right">
             <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
           </h7>
@@ -42,9 +46,6 @@
         </div>
       </div>
     </nav>
-    {% if user.is_authenticated %}
-    <span style="font-family: Times New Roman;font-size: larger;">Welcome, {{user.first_name}} {{user.last_name}}</span>
-    {% endif %}
 
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
     messages %} {% for category, message in messages %} {% if category ==
