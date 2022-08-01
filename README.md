@@ -15,7 +15,7 @@ pip install -r requirements.txt
 export FLASK_ENV=development                          
 // set FLASK_ENV=development (for Windows Powershell)
 
-flask run
+flask run// py -m flask run
 
 
 ---
@@ -28,7 +28,7 @@ cd SuccessCutie
 export FLASK_ENV=development                          
 // set FLASK_ENV=development (for Windows Powershell)
 
-flask run
+flask run// py -m flask run
 
 copy the http://127.0.0.1:5000/login and paste sa browser
 
